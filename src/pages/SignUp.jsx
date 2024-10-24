@@ -16,7 +16,7 @@ const SignUp = () => {
     password: "",
     confirmPass: "",
   });
-  
+
   const [isMatching, setIsMatching] = useState(false);
 
   // Password Confirmation Logic
@@ -110,10 +110,12 @@ const SignUp = () => {
               <p className="text-green-600 font-bold mb-4">
                 Passwords match, proceed.
               </p>
-            ) : user.confirmPass && (
-              <p className="text-red-600 font-bold mb-4">
-                Passwords do not match.
-              </p>
+            ) : (
+              user.confirmPass && (
+                <p className="text-red-600 font-bold mb-4">
+                  Passwords do not match.
+                </p>
+              )
             )}
 
             {/* Remember Me */}
