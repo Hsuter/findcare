@@ -92,10 +92,7 @@ const Login = () => {
                 />
                 <label className="text-black">Remember me</label>
               </div>
-              <Link
-                to="/reqrespass"
-                className="text-blue-600 hover:underline"
-              >
+              <Link to="/reqrespass" className="text-blue-600 hover:underline">
                 Forgot password?
               </Link>
             </div>
