@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { loginimage } from "../assets";
 
-const SignUp = () => {
+const Signup = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const auth = useSelector((state) => state.auth);
@@ -160,4 +160,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Signup;
