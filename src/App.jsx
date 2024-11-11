@@ -10,6 +10,8 @@ import Login from "./pages/Login";
 import HospitalMap from "./pages/Hospitalmap";
 import HospitalDetails from "./pages/HospitaDetails";
 import Donation from "./pages/Donation";
+import CaregiversNearYou from "./pages/CaregiversNearYou";
+import CaregiverDetails from "./pages/CaregiversDetailsPage";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/Hospitalmap" element={<HospitalMap />} />
           <Route path="/hospital/:id" element={<HospitalDetails />} />
           <Route path="/donation" element={<Donation />} />
+          <Route path="/caregivers" element={<CaregiversNearYou />} />
+          <Route path="/caregiver/:id" element={<CaregiverDetails />} />
         </Routes>
       </main>
       <Footer />
